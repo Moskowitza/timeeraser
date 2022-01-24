@@ -5,7 +5,7 @@ import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', ...mdsvexConfig.extensions],
+	extensions: ['.svelte', ".svx", ...mdsvexConfig.extensions],
 
 	// Consult https://github.com/sveltejs/svelte-preprocespacs
 	// for more information about preprocessors

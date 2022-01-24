@@ -1,8 +1,4 @@
-<script lang="ts">
-	import Git from '../../markdownPosts/cleanGit.svx';
-	import Format from '../../markdownPosts/cleanCode.svx';
-</script>
-
-<Git />
-
-<Format />
+<h1>posts</h1>
+<article>
+	<h3>new post</h3>
+</article>

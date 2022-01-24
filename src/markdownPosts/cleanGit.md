@@ -1,9 +1,9 @@
 ---
 title: Git Guide
+slug: clean-git
 ---
 
-# Suggested Git Flow 
-
+# {title}
 
 At our company we have dev, qa, and production branches deployed to separate environments. 
 Deploys should occur after a gitbub pull request is approved and a new branch is merged.

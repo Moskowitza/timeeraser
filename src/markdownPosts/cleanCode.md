@@ -1,8 +1,9 @@
 ---
 title: Cleaning Code
+slug: clean-code
 ---
 
-A list of items to make code cleaner for everyone on your team.
+<h1>A list of items to make code cleaner for everyone on your team.</h1>
 
 - remove console.log that are not intended for production.
 - Consistant formatting
