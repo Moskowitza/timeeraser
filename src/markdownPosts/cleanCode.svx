@@ -1,0 +1,19 @@
+---
+title: Cleaning Code
+---
+
+A list of items to make code cleaner for everyone on your team.
+
+- remove console.log that are not intended for production.
+- Consistant formatting
+    - eslint
+    - prettier
+- leave notes where needed
+- code that has been commented out should have a comment. ie:feature that has been rolled back or conditional on a release
+- up-to-date readme includes
+    - node version
+    - how to start locally
+    - how to run tests
+    - how to build/deploy
+    - list of required enviromental variables
+    - core packages for developers to know and version notes

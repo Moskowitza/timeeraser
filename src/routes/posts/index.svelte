@@ -1,5 +1,8 @@
 <script lang="ts">
-	import Hello from '../../markdownPosts/cleanGit.svx';
+	import Git from '../../markdownPosts/cleanGit.svx';
+	import Format from '../../markdownPosts/cleanCode.svx';
 </script>
 
-<Hello />
+<Git />
+
+<Format />
