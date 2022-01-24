@@ -1,3 +1,39 @@
-# hello
+---
+title: Git Guide
+---
 
-welcome post
+# Suggested Git Flow 
+
+
+At our company we have dev, qa, and production branches deployed to separate environments. 
+Deploys should occur after a gitbub pull request is approved and a new branch is merged.
+New work should move through dev, to qa, and into our production branches.  There may be exceptions to this pattern, but this should be an exception.
+
+
+When starting new work, make sure you're up to date with what's currently in the repo.
+```
+git checkout dev
+git reset --hard origin/dev
+```
+When starting a new task work off a ticket branch that starts with a ticket number
+Consider the name of the branch as a new feature, request, bug or another descriptor
+
+```
+git checkout -b 14999_request_PatientPageText
+```
+
+### clean up commit history
+
+
+### Writing PR Descriptions
+
+Github provides an easy way to add formatted descriptors to PRs. 
+PRs should:
+
+- A link to ticket 
+- Description of what was done
+- Developer comments on the approach, work that is not yet done, and what may be missing
+- Any actions needed by other team members (eg: new npm packages, changes to a config, breaking changes, or other reasons the code may not work as it has been) 
+- Screen shots if applicable
+
+

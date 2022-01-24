@@ -15,7 +15,7 @@
 		background: red;
 		width: 100%;
 		nav {
-			background-color: blue;
+			background-color: lightblue;
 		}
 	}
 </style>
