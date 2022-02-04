@@ -1,48 +1,29 @@
 <script context="module" lang="ts">
-	import { page } from '$app/stores';
-
 	export async function load({ params, fetch, session, stuff }) {
-		const Hello = await import(`../../markdownPosts/${params.slug}.md`);
-
-		// const post = {
-		// 	title: params.slug,
-		// 	date: new Date(),
-		// 	body: 'lalalalala'
-		// };
-		return {
-			props: {
-				title: Hello.metadata.title,
-				Hello: Hello.default
-			}
-		};
-		// const url = `/blog/${params.slug}.json`;
-		// const res = await fetch(url);
-
-		// if (res.ok) {
-		// 	return {
-		// 		props: {
-		// 			article: await res.json()
-		// 		}
-		// 	};
-		// }
-
-		// return {
-		// 	status: res.status,
-		// 	error: new Error(`Could not load ${url}`)
-		// };
+		try {
+			const Post = await import(`../../markdownPosts/${params.slug}.svx`);
+			return {
+				props: {
+					title: Post.metadata.title,
+					Post: Post.default
+				}
+			};
+		} catch (error) {
+			return {
+				status: 404,
+				error: 'Post Not Found'
+			};
+		}
 	}
 </script>
 
 <script>
 	export let title;
-	export let Hello;
+	export let Post;
 </script>
 
+<svelte:head><title>{title}</title></svelte:head>
 <div>
-	title
 	{title}
-</div>
-
-<div>
-	<Hello />
+	<svelte:component this={Post} />
 </div>

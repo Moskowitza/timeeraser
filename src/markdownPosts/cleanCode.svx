@@ -1,6 +1,6 @@
 ---
 title: Cleaning Code
-slug: clean-code
+slug: cleanCode
 ---
 
 <h1>A list of items to make code cleaner for everyone on your team.</h1>

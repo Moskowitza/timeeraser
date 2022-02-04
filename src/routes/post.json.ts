@@ -5,10 +5,12 @@ type PostType = {
 	}
 }
 
-export async function get (): Promise<PostType> {
+import type { RequestHandler } from '@sveltejs/kit'
+
+export const get: RequestHandler<PostType> = () => {
 	return {
 		status: 200,
-		body: {
+			body: {
 			data: 'test'
 		}
 	}

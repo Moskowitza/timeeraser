@@ -1,6 +1,6 @@
 ---
 title: Git Guide
-slug: clean-git
+slug: cleanGit
 ---
 
 # {title}
@@ -83,5 +83,3 @@ PRs should:
 
 Review your PR before sharing with the team, and letting them know it's ready for review.
 If there is a merge conflict, resolve the conflict locally and push the changes back to github.
-
-
