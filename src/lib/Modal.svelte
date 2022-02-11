@@ -1,17 +1,24 @@
 <script lang="ts">
 	import Portal from './Portal.svelte';
 	import { fly, fade } from 'svelte/transition';
-
+	import { clickOutside } from './clickOutside';
 	export let isModalOpen = false;
 	function closeModal() {
 		isModalOpen = false;
 	}
+	export let background = true;
 </script>
 
 {#if isModalOpen}
 	<Portal>
-		<div class="modal-wrapper" transition:fly={{ opacity: 0, y: 100 }}>
+		<div
+			use:clickOutside
+			on:click-outside={() => closeModal()}
+			class="modal-wrapper"
+			transition:fly={{ opacity: 0, y: 100 }}
+		>
 			<button
+				class="close-btn"
 				on:click={() => {
 					console.log('closes');
 					return closeModal();
@@ -22,19 +29,31 @@
 			</button>
 			<slot />
 		</div>
-
-		<div
-			class="background"
-			on:click={() => {
-				console.log('closes');
-				return closeModal();
-			}}
-			transition:fade
-		/>
+		{#if background}
+			<div
+				class="background"
+				on:click={() => {
+					console.log('closes');
+					return closeModal();
+				}}
+				transition:fade
+			/>
+		{/if}
 	</Portal>
 {/if}
 
 <style>
+	.close-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0.5rem;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		font-size: 1.5rem;
+		color: #000;
+	}
 	.modal-wrapper {
 		position: fixed;
 		inset: 100px 0 0;
