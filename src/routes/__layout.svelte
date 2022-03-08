@@ -88,7 +88,7 @@
 		overflow-wrap: break-word;
 	}
 	/*
-  9. Create a root stacking context
+   9. Create a root stacking context
 */
 	#svelte,
 	#__next {
@@ -97,20 +97,20 @@
 	/* END RESET */
 
 	#svelte {
-		height: 100%;
+		/* height: 100%;
 		background-color: rgb(244, 244, 244);
 		display: grid;
 		grid-template-columns: auto 150px;
 		grid-template-rows: 3rem 1fr 3rem;
-		grid-gap: 1em;
+		grid-gap: 1em; */
 	}
 
 	#svelte > header,
 	footer {
-		grid-column: 1 / 3;
+		/* grid-column: 1 / 3; */
 	}
 	main {
-		margin: 1rem;
+		/* margin: 1rem;
 		height: 100%;
 		width: 100%;
 		outline: blue 1px solid;
@@ -118,18 +118,18 @@
 		grid-row: 1, span 2;
 		grid-template-columns: 1fr 150px;
 		grid-template-rows: 1fr;
-		gap: 2rem;
+		gap: 2rem; */
 	}
 	article {
 		outline: orange 1px solid;
 		width: 100%;
 	}
 	aside {
-		outline: red 1px solid;
+		/* outline: red 1px solid; */
 		/* width: 300px; */
 	}
 	#svelte > footer {
-		height: 100%;
+		/* height: 100%; */
 		/* grid-row: 3; */
 	}
 </style>

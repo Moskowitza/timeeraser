@@ -1,0 +1,13 @@
+---
+title: first post
+slug: firstPost
+date: 2022-01-01
+---
+<script> 
+import { DateToDay } from '../lib/DateToDay';
+</script>
+
+# {title}
+first post #{date}
+
+<DateToDay date={date} />

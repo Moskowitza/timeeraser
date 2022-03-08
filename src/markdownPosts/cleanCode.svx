@@ -1,6 +1,7 @@
 ---
 title: Cleaning Code
 slug: cleanCode
+date: 2022-01-04
 ---
 
 <h1>A list of items to make code cleaner for everyone on your team.</h1>

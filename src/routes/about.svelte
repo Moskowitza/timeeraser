@@ -1,18 +1,8 @@
-<script lang="ts">
-	import Toggle from '$lib/Toggle.svelte';
-	let isToggled = false;
-</script>
+<h1>Hello</h1>
 
-<h1>Aaron Moskowitz</h1>
-
-<p>Hello I'm Aaron</p>
-
-<Toggle bind:isToggled label={'toggle about'} />
-
-<Toggle bind:isToggled label={'toggle about'} style="--toggleButtonColor:pink;" />
-<button
-	type="button"
-	on:click={() => {
-		console.log('clicked');
-	}}>click</button
->
+<p>
+	I'm Aaron Moskowitz, senior front-end developer at Rothman Orthopedics. I build and maintain
+	webapps to improve the worklife of our team members and improve patient care. I'm a passionate
+	rock climber, vegan, and developer. I live in Philadelphia, home of some of the vegan restaurants
+	on the east coast.
+</p>

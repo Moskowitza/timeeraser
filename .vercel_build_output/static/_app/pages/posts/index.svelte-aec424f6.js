@@ -1,1 +1,0 @@
-import{S as c,i,s as l,e as d,t as h,c as p,a as m,h as u,d as o,g as _,G as f,F as n}from"../../chunks/vendor-d4cd4022.js";function x(r){let t,a;return{c(){t=d("h1"),a=h("posts")},l(e){t=p(e,"H1",{});var s=m(t);a=u(s,"posts"),s.forEach(o)},m(e,s){_(e,t,s),f(t,a)},p:n,i:n,o:n,d(e){e&&o(t)}}}class g extends c{constructor(t){super();i(this,t,null,x,l,{})}}export{g as default};

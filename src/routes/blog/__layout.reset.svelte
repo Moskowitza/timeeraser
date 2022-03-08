@@ -32,6 +32,7 @@
 	{/each}
 </ul>
 <div class="container">
+	container
 	<slot />
 </div>
 

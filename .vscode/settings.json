@@ -4,6 +4,6 @@
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
     "[typescript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     },
 }
